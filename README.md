@@ -16,6 +16,23 @@ off-the-shelf mod covers: a Certus Quartz growth-boost + purchase mechanism, and
 custom spawn with unbreakable "teleport to random dungeon" portal blocks. Not yet
 built — see `TODO.md`.
 
+## Core gameplay loop
+
+1. **Explore & fight** — venture into a **When Dungeons Arise** structure, fight
+   through it.
+2. **Loot** — per-player **Lootr** containers (no race-to-loot), plus **Relics**
+   drops and raw materials.
+3. **Sell** — bring loot back and sell it for currency.
+4. **Reinvest** — spend on AE2 progression (Certus Quartz), automation gear
+   (Mekanism/Create), and battle artifacts (Relics), to go deeper and fight
+   tougher dungeons. Repeat from 1.
+
+**Current state**: only the Certus Quartz leg of step 4 is actually implemented —
+`CertusTraderBlock` in the standalone mod sells Certus Quartz Crystal for emeralds.
+There's no general sell-loot-for-currency shop yet, and no purchase path for
+automation gear or artifacts (those are still crafted/found only, not bought).
+Tracked in `TODO.md`.
+
 ## Server URL
 
 - TBD (not yet deployed)
@@ -92,14 +109,13 @@ authoring; the format is already plain text.
 pulled into `pack/` via `packwiz url add` once built (same pattern as the tech
 pack's `waylandcraft` pull). Scope:
 
-1. **Certus Quartz economy** — a growth-accelerator block (hooks AE2's own
-   growth-chance mechanism, doesn't reimplement it) + a trader for buying Certus
-   Quartz Crystal outright.
-2. **Custom spawn + random-dungeon portal** — an unbreakable block that teleports
-   to a randomly-picked generated dungeon structure (via vanilla
-   `ServerLevel#findNearestMapStructure`, picking a random candidate rather than
-   the nearest), baked into a spawn structure template placed once on first world
-   load.
+1. **Certus Quartz economy** — `CertusTraderBlock`: buy Certus Quartz Crystal for
+   emeralds. (AE2's own Growth Accelerator block already covers "speed up
+   growth," so that wasn't reimplemented here.) **Built.**
+2. **Custom spawn + random-dungeon portal** — `DungeonPortalBlock`: unbreakable,
+   teleports to a randomly-offset nearby dungeon structure. **Built**, but not
+   yet wired into an actual spawn structure template or pointed at When Dungeons
+   Arise's real structure tag — see that repo's README.
 
 See the tech pack's README for everything else (deploy, backups, RCON, releasing,
 carrying over client settings) — it's the same `justfile`/`scripts/`/`systemd/`

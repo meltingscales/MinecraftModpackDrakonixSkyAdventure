@@ -1,14 +1,17 @@
-- Standalone mod `drakonix-sky-adventure-mod` not started yet: Certus Quartz
-  growth-accelerator + trader block, and the custom spawn + random-dungeon
-  unbreakable portal block. See README.md "Standalone mod" section for scope.
+- Standalone mod `drakonix-sky-adventure-mod`: `CertusTraderBlock` (emeralds for
+  Certus Quartz Crystal) is built. `DungeonPortalBlock` is built but not yet
+  wired into an actual spawn structure template, and its structure-tag config
+  still points at the vanilla placeholder (`minecraft:mineshaft`), not When
+  Dungeons Arise's real tag. See that repo's README.
+
+- No general sell-loot-for-currency shop yet, and no purchase path for
+  automation gear (Mekanism/Create) or battle artifacts (Relics) — only Certus
+  Quartz is buyable so far. Core gameplay loop (README) wants all of loot →
+  sell → reinvest; right now only the "reinvest in Certus Quartz" leg exists.
 
 - Mining-focused ore-gen/exploration mods not picked yet — deferred past the
   initial skeleton. Tech pack's veinminer/mouse-tweaks QoL mods are candidates
   to port over too if mining feel needs it.
-
-- Currency for the Certus Quartz trader (in the standalone mod) not decided —
-  plain emeralds vs. something else. Depends on whether an EMC-alike
-  (Replication, like the tech pack uses) gets added here.
 
 - Aether-themed skyblock idea (void overworld, Aether as main explorable world)
   raised and explicitly deferred — core mechanics (AE2, teleport/home, dungeons,
