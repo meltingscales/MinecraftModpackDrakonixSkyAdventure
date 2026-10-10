@@ -10,11 +10,12 @@ specific to this pack.
 
 A roguelike-adventure pack: battle and mining are the core loop, random teleport +
 `/sethome`/`/home` handle navigation, and **Applied Energistics 2** (Certus Quartz)
-is the central progression system. Also ships (planned) a standalone NeoForge mod,
-`drakonix-sky-adventure-mod` (separate repo), for the gameplay pieces no
-off-the-shelf mod covers: a Certus Quartz growth-boost + purchase mechanism, and a
-custom spawn with unbreakable "teleport to random dungeon" portal blocks. Not yet
-built — see `TODO.md`.
+is the central progression system. Also ships a standalone NeoForge mod,
+[`drakonix-sky-adventure-mod`](https://github.com/meltingscales/drakonix-sky-adventure-mod)
+(separate repo), for the gameplay pieces no off-the-shelf mod covers: a Certus
+Quartz purchase mechanism, and an unbreakable "teleport to random dungeon" portal
+block. See that repo's README for its own status; see `TODO.md` here for what's
+still unwired (spawn structure placement, real dungeon structure tag).
 
 ## Core gameplay loop
 
@@ -103,11 +104,12 @@ directly under `pack/config/ftbquests/quests/` (or point FTB Quests' in-game edi
 at the same files). No mod fork or custom tooling needed for AI-assisted quest
 authoring; the format is already plain text.
 
-## Standalone mod (planned, not yet started)
+## Standalone mod
 
-`drakonix-sky-adventure-mod` — separate repo, own NeoForge 1.21.1 Gradle build,
-pulled into `pack/` via `packwiz url add` once built (same pattern as the tech
-pack's `waylandcraft` pull). Scope:
+[`drakonix-sky-adventure-mod`](https://github.com/meltingscales/drakonix-sky-adventure-mod)
+— separate repo, own NeoForge 1.21.1 Gradle build, pulled into `pack/` via
+`packwiz url add` once released (same pattern as the tech pack's `waylandcraft`
+pull — not yet wired in here, no release exists yet). Scope:
 
 1. **Certus Quartz economy** — `CertusTraderBlock`: buy Certus Quartz Crystal for
    emeralds. (AE2's own Growth Accelerator block already covers "speed up
