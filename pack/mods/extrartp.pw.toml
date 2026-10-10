@@ -1,0 +1,13 @@
+name = "ExtraRTP"
+filename = "ExtraRTP-1.5.0-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/trAovj2e/versions/3zZVSGez/ExtraRTP-1.5.0-1.21.1-NeoForge.jar"
+hash-format = "sha512"
+hash = "0837a678fe3f129cc9e700761e1d0feb6693337abbdd27f8dbed53d5c787c90364efe1a75097e54ec63995beb8888033636dc491b00f28ff60ec24c85fb5a312"
+
+[update]
+[update.modrinth]
+mod-id = "trAovj2e"
+version = "3zZVSGez"

@@ -1,0 +1,13 @@
+name = "Drakonix Sky Adventure"
+author = "Henry Post"
+version = "0.1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "45a546180c2ec3ee7be93b8b71d9d2eb81be2f9f6eabd46bdd6481a1440aa34b"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.251"

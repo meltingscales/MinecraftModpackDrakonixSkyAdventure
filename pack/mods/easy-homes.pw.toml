@@ -1,0 +1,13 @@
+name = "Easy Homes"
+filename = "easy_homes-21.1.6-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/w4Z2NKqf/versions/yVvbEiux/easy_homes-21.1.6-neoforge.jar"
+hash-format = "sha512"
+hash = "fbb3f8a8e937c5c352954ae63503a7a19e94e7fb8d195d83f16d9699355afa1b925779507ca98795399aaa4d1173770600a8e091246e966c412eadc96e48c3f5"
+
+[update]
+[update.modrinth]
+mod-id = "w4Z2NKqf"
+version = "yVvbEiux"
